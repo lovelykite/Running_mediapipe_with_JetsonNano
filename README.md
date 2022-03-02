@@ -61,15 +61,24 @@ $ python3 sample_hand.py
 
 Solutions for errors during install and launch mediapipe
 =========================================================
-
-
-
-
-
-
+- Error Msg "No module named 'mediapipe'"
+  - Visit https://github.com/jiuqiant/mediapipe_python_aarch64 and follow instructions.
+ 
+ - Easiest ways to install bazel & protobuf
+ ~~~
+ $ git clone https://github.com/jkjung-avt/jetson_nano
+ $ ./install_bazel-3.7.2.sh
+ $ ./install_protobuf-3.9.2.sh
+ ~~~
 
 - Reference
   - https://github.com/feitgemel/Jetson-Nano-Python
   - https://github.com/PINTO0309/mediapipe-bin
   - https://github.com/jiuqiant/mediapipe_python_aarch64
   - https://github.com/jkjung-avt/jetson_nano
+
+- If the codes in the github link are updated, the above instructions may be an error. In that case, use the repository I forked.
+  - https://github.com/lovelykite/mediapipe
+  - https://github.com/lovelykite/mediapipe-bin.git
+  - https://github.com/lovelykite/mediapipe-python-sample
+  - https://github.com/lovelykite/jetson_nano
