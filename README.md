@@ -17,3 +17,11 @@ $ sudo apt-get update
 $ sudo apt-get install python3-pip
 $ sudo pip3 install -U pip testresources setuptools==49.6.0
 ~~~
+
+
+
+- Reference
+  - https://github.com/feitgemel/Jetson-Nano-Python
+  - https://github.com/PINTO0309/mediapipe-bin
+  - https://github.com/jiuqiant/mediapipe_python_aarch64
+  - https://github.com/jkjung-avt/jetson_nano
