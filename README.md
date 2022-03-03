@@ -85,11 +85,12 @@ Solutions for errors during install and launch mediapipe
   ~~~
   - Run build code again
 
-- Reference
-  - https://github.com/feitgemel/Jetson-Nano-Python
-  - https://github.com/PINTO0309/mediapipe-bin
-  - https://github.com/jiuqiant/mediapipe_python_aarch64
-  - https://github.com/jkjung-avt/jetson_nano
+Reference
+==========
+- https://github.com/feitgemel/Jetson-Nano-Python
+- https://github.com/PINTO0309/mediapipe-bin
+- https://github.com/jiuqiant/mediapipe_python_aarch64
+- https://github.com/jkjung-avt/jetson_nano
 
 - If the codes in the github link are updated, the above instructions may be an error. In that case, use the repository I forked.
   - https://github.com/lovelykite/mediapipe
