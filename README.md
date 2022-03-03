@@ -14,6 +14,7 @@ $ sudo jetson_clocks
 ~~~
 $ git clone https://github.com/JetsonHacksNano/installSwapfile.git  
 $ cd installSwapfile
+$ ./installSwapfile.sh
 ~~~
 
 - Pre-install include Python and pip
