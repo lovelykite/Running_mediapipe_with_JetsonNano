@@ -71,7 +71,7 @@ Solutions for errors during install and launch mediapipe
  $ ./install_protobuf-3.9.2.sh
  ~~~
  
- - Error MSG **"Target //mediapipe/modules/face_detection:face_detection_short_range_cpu failed to build"**
+- Error MSG **"Target //mediapipe/modules/face_detection:face_detection_short_range_cpu failed to build"**
   - Update & install gcc-9
   ~~~
   $ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
