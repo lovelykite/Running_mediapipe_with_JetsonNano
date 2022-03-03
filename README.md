@@ -61,7 +61,7 @@ $ python3 sample_hand.py
 
 Solutions for errors during install and launch mediapipe
 =========================================================
-- Error Msg "No module named 'mediapipe'"
+- Error Msg **"No module named 'mediapipe'"**
   - Visit https://github.com/jiuqiant/mediapipe_python_aarch64 and follow instructions.
  
  - Easiest ways to install bazel & protobuf
@@ -70,6 +70,20 @@ Solutions for errors during install and launch mediapipe
  $ ./install_bazel-3.7.2.sh
  $ ./install_protobuf-3.9.2.sh
  ~~~
+ 
+ - Error MSG **"Target //mediapipe/modules/face_detection:face_detection_short_range_cpu failed to build"**
+  - Update & install gcc-9
+  ~~~
+  $ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+  $ sudo apt update
+  $ sudo apt install gcc-9 g++-9
+  $ sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 100 --slave /usr/bin/g++ g++ /usr/bin/g++-9 --slave /usr/bin/gcov gcov /usr/bin/gcov-9
+  ~~~
+  - Clean the cache before you rerun the build command
+  ~~~
+  $ bazel clean --expunge
+  ~~~
+  - Run build code again
 
 - Reference
   - https://github.com/feitgemel/Jetson-Nano-Python
