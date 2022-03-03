@@ -19,8 +19,8 @@ $ ./installSwapfile.sh
 
 - Pre-install include Python and pip
 ~~~
-$ sudo apt update
 $ sudo apt-get update
+$ sudo apt-get upgrade
 $ sudo apt-get install python3-pip
 $ sudo pip3 install -U pip testresources setuptools==49.6.0
 ~~~
