@@ -72,7 +72,7 @@ Solutions for errors during install and launch mediapipe
  $ ./install_protobuf-3.9.2.sh
  ~~~
  
-- Error MSG **"Target //mediapipe/modules/face_detection:face_detection_short_range_cpu failed to build"**
+- Error Msg **"Target //mediapipe/modules/face_detection:face_detection_short_range_cpu failed to build"**
   - Update & install gcc-9
   ~~~
   $ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
@@ -85,6 +85,30 @@ Solutions for errors during install and launch mediapipe
   $ bazel clean --expunge
   ~~~
   - Run build code again
+  ~~~
+  sudo python3 setup.py bdist_wheel
+  ~~~
+
+- Error Msg **"An error occurred during the fetch of repository 'rules_cc':"**
+  - Modify the WORKSPACE under the mediapipe root folder
+  ~~~
+  # line 37
+  strip_prefix = "rules_cc-master",
+  ↓
+  strip_prefix = "rules_cc-main",
+  
+  urls = ["https://github.com/bazelbuild/rules_cc/archive/master.zip"],
+  ↓
+  urls = ["https://github.com/bazelbuild/rules_cc/archive/main.zip"],
+  ~~~
+  - Clean the cache before you rerun the build command
+  ~~~
+  $ bazel clean --expunge
+  ~~~
+  - Run build code again
+  ~~~
+  sudo python3 setup.py bdist_wheel
+  ~~~
 
 Reference
 ==========
