@@ -116,9 +116,3 @@ Reference
 - https://github.com/PINTO0309/mediapipe-bin
 - https://github.com/jiuqiant/mediapipe_python_aarch64
 - https://github.com/jkjung-avt/jetson_nano
-
-- If the codes in the github link are updated, the above instructions may be an error. In that case, use the repository I forked.
-  - https://github.com/lovelykite/mediapipe
-  - https://github.com/lovelykite/mediapipe-bin.git
-  - https://github.com/lovelykite/mediapipe-python-sample
-  - https://github.com/lovelykite/jetson_nano
