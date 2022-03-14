@@ -37,9 +37,9 @@ $ sudo env H5PY_SETUP_REQUIRES=0 pip3 install -U h5py==3.1.0
 $ sudo apt-get install python3-opencv
 ~~~
 
-- Install mediapipe from the source code
+- Install mediapipe v0.8.5 from the source code
 ~~~
-$ git clone https://github.com/google/mediapipe.git
+$ git clone -b v0.8.5 https://github.com/google/mediapipe.git
 $ cd mediapipe
 
 $ sudo apt-get install -y libopencv-core-dev  libopencv-highgui-dev libopencv-calib3d-dev libopencv-features2d-dev libopencv-imgproc-dev libopencv-video-dev
@@ -50,8 +50,10 @@ $ ./setup_opencv.sh
 - Download mediapipe-bin and install
 ~~~
 $ git clone https://github.com/PINTO0309/mediapipe-bin.git && cd mediapipe-bin
-$ sudo chmod +x ./v0.8.4/download.sh && ./v0.8.4/download.sh
 $ sudo chmod +x ./v0.8.5/download.sh && ./v0.8.5/download.sh
+$ tar v0.8.5.zip
+$ cd v0.8.5/numpy119x/py36
+$ pip3 install mediapipe-0.8.5_cuda102-cp36-cp36m-linux_aarch64.whl
 ~~~
 
 - Run sample hand detection
