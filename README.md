@@ -43,22 +43,20 @@ $ git clone -b v0.8.5 https://github.com/google/mediapipe.git
 $ cd mediapipe
 
 $ sudo apt-get install -y libopencv-core-dev  libopencv-highgui-dev libopencv-calib3d-dev libopencv-features2d-dev libopencv-imgproc-dev libopencv-video-dev
-$ sudo chmod 744 setup_opencv.sh
-$ ./setup_opencv.sh
+$ sudo chmod 744 setup_opencv.sh && ./setup_opencv.sh
 ~~~
 
 - Download mediapipe-bin and install
 ~~~
 $ git clone https://github.com/PINTO0309/mediapipe-bin.git && cd mediapipe-bin
 $ sudo chmod +x ./v0.8.5/download.sh && ./v0.8.5/download.sh
-$ tar v0.8.5.zip
-$ cd v0.8.5/numpy119x/py36
+$ upzip v0.8.5.zip && cd v0.8.5/numpy119x/py36
 $ pip3 install mediapipe-0.8.5_cuda102-cp36-cp36m-linux_aarch64.whl
 ~~~
 
 - Run sample hand detection
 ~~~
-$ git clone https://github.com/Kazuhito00/mediapipe-python-sample && cd mediapipe-python-sample
+$ git clone -b v0.8.5 https://github.com/Kazuhito00/mediapipe-python-sample && cd mediapipe-python-sample
 $ python3 sample_hand.py
 ~~~
 
@@ -67,7 +65,7 @@ Solutions for errors during install and launch mediapipe
 - Error Msg **"No module named 'mediapipe'"**
   - Visit https://github.com/jiuqiant/mediapipe_python_aarch64 and follow instructions.
  
- - Easiest ways to install bazel & protobuf
+ - Install bazel & protobuf
  ~~~
  $ git clone https://github.com/jkjung-avt/jetson_nano
  $ ./install_bazel-3.7.2.sh
@@ -114,6 +112,7 @@ Solutions for errors during install and launch mediapipe
 
 Reference
 ==========
+- https://github.com/google/mediapipe
 - https://github.com/feitgemel/Jetson-Nano-Python
 - https://github.com/PINTO0309/mediapipe-bin
 - https://github.com/jiuqiant/mediapipe_python_aarch64
