@@ -15,6 +15,7 @@ $ sudo jetson_clocks
 $ git clone https://github.com/JetsonHacksNano/installSwapfile.git  
 $ cd installSwapfile
 $ ./installSwapfile.sh
+$ reboot
 ~~~
 
 - Pre-install include Python and pip
@@ -109,6 +110,10 @@ Solutions for errors during install and launch mediapipe
   ~~~
   sudo python3 setup.py bdist_wheel
   ~~~
+
+Main Package version when the code execution is successful (A~Z)
+================================================================
+- 
 
 Reference
 ==========
