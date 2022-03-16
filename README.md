@@ -35,19 +35,11 @@ sudo apt-get install libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip li
 ~~~
 $ sudo pip3 install -U --no-deps numpy==1.19.4 future==0.18.2 mock==3.0.5 keras_preprocessing==1.1.2 keras_applications==1.0.8 gast==0.4.0 protobuf pybind11 cython pkgconfig
 $ sudo env H5PY_SETUP_REQUIRES=0 pip3 install -U h5py==3.1.0
-$ sudo apt-get install python3-opencv
+$ pip3 install opencv-python==4.5.2
+$ pip3 install opencv-contrib-python==4.5.2
 ~~~
 
-- Install mediapipe v0.8.5 from the source code
-~~~
-$ git clone -b v0.8.5 https://github.com/google/mediapipe.git
-$ cd mediapipe
-
-$ sudo apt-get install -y libopencv-core-dev  libopencv-highgui-dev libopencv-calib3d-dev libopencv-features2d-dev libopencv-imgproc-dev libopencv-video-dev
-$ sudo chmod 744 setup_opencv.sh && ./setup_opencv.sh
-~~~
-
-- Download mediapipe-bin and install
+- Download mediapipe-bin and install mediapipe v0.8.5 with cuda 10.2
 ~~~
 $ git clone https://github.com/PINTO0309/mediapipe-bin.git && cd mediapipe-bin
 $ sudo chmod +x ./v0.8.5/download.sh && ./v0.8.5/download.sh
@@ -111,9 +103,14 @@ Solutions for errors during install and launch mediapipe
   sudo python3 setup.py bdist_wheel
   ~~~
 
-Main Package version when the code execution is successful (A~Z)
+Main Package version when the code execution is successful
 ================================================================
-- 
+- cuda v10.2
+- gcc v7.4.0
+- opencv-python v4.5.2
+- opencv-contrib-python v4.5.2
+- python v3.6.9
+- ubuntu 18.04
 
 Reference
 ==========
