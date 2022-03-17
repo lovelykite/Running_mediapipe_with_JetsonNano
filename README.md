@@ -105,12 +105,13 @@ Solutions for errors during install and launch mediapipe
 
 Main Package version when the code execution is successful
 ================================================================
+- ubuntu 18.04
+- python v3.6.9
+- mediapipe v0.8.5
 - cuda v10.2
 - gcc v7.4.0
 - opencv-python v4.5.2
 - opencv-contrib-python v4.5.2
-- python v3.6.9
-- ubuntu 18.04
 
 Reference
 ==========
