@@ -54,7 +54,7 @@ def main():
     use_brect = args.use_brect
 
     # カメラ準備 ###############################################################
-    cap = cv.VideoCapture(2)
+    cap = cv.VideoCapture(cap_device)
     cap.set(cv.CAP_PROP_FRAME_WIDTH, cap_width)
     cap.set(cv.CAP_PROP_FRAME_HEIGHT, cap_height)
 
