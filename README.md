@@ -42,14 +42,25 @@ $ pip3 install opencv-contrib-python==4.5.2
 - Download mediapipe-bin and install mediapipe v0.8.5 with cuda 10.2
 ~~~
 $ git clone https://github.com/PINTO0309/mediapipe-bin.git && cd mediapipe-bin
+$ git clone https://github.com/lovelykite/mediapipe_with_JetsonNano.git && cd mediapipe_with_JetsonNano/mediapipe-bin
 $ sudo chmod +x ./v0.8.5/download.sh && ./v0.8.5/download.sh
 $ upzip v0.8.5.zip && cd v0.8.5/numpy119x/py36
+$ pip3 install mediapipe-0.8.5_cuda102-cp36-cp36m-linux_aarch64.whl
+~~~
+  or
+~~~
+$ git clone https://github.com/lovelykite/mediapipe_with_JetsonNano.git && cd mediapipe_with_JetsonNano/mediapipe-bin/v0.8.5/numpy119x/py36
 $ pip3 install mediapipe-0.8.5_cuda102-cp36-cp36m-linux_aarch64.whl
 ~~~
 
 - Run sample hand detection
 ~~~
 $ git clone -b v0.8.5 https://github.com/Kazuhito00/mediapipe-python-sample && cd mediapipe-python-sample
+$ python3 sample_hand.py
+~~~
+  or
+~~~
+$ git clone https://github.com/lovelykite/mediapipe_with_JetsonNano.git && cd mediapipe-python-sample
 $ python3 sample_hand.py
 ~~~
 
