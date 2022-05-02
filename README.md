@@ -67,7 +67,7 @@ Solutions for errors during install and launch mediapipe
 - Error Msg **"No module named 'mediapipe'"**
   - Visit https://github.com/jiuqiant/mediapipe_python_aarch64 and follow instructions.
  
- - Install bazel & protobuf
+  - Install bazel & protobuf
  ~~~
  $ git clone https://github.com/jkjung-avt/jetson_nano
  $ ./install_bazel-3.7.2.sh
